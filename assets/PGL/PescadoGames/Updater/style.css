@@ -1,6 +1,30 @@
 body {
   color: #fff;
   margin: 0;
-  font-family: 'Roboto', "Noto Sans JP", sans-serif;
-  min-height: 100vh;
+  font-family: "Noto Sans JP",sans-serif;
+  background: linear-gradient(45deg, #000000, #191919);
+}
+
+h1 {
+  margin-left: 25px
+}
+
+h2 {
+  margin-left: 25px
+}
+
+h3 {
+  margin-left: 25px
+}
+
+h4 {
+  margin-left: 25px
+}
+
+h5 {
+  margin-left: 25px
+}
+
+h6 {
+  margin-left: 25px
 }
