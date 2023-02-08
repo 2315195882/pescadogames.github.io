@@ -3,5 +3,5 @@
   <version>1.0.0.0</version>
   <url>https://www.pescadogames.com/assets/PGL/PescadoGames/Updater/PescadoGamesLauncher.exe</url>
   <changelog>https://www.pescadogames.com/assets/PGL/PescadoGames/Updater/changelog.html</changelog>
-  <enforcement>true</enforcement>
+  <enforcemode>true</enforcemode>
 </item>
