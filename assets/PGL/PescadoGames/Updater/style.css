@@ -1,8 +1,13 @@
 body {
   color: #fff;
   margin: 0;
-  font-family: "Noto Sans JP",sans-serif;
-  background: linear-gradient(45deg, #000000, #191919);
+  padding: 50px;
+  font-family: "IBM Plex Sans JP";
+  background: linear-gradient(45deg, #000000, #2a2a2a);
+}
+
+a {
+  color: white;
 }
 
 h1 {
