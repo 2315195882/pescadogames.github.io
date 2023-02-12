@@ -103,12 +103,11 @@
     display: inline-block;
 }
 
-#footer #copyrightandsns {
+#footer #copyright {
     color: #fff;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 .socialnetworkbutton {
@@ -134,6 +133,12 @@
 
 #footer #copyrightandsns small a {
     color: #fff;
+}
+
+#footer #copyrightandsns span{
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #footer #URL {
