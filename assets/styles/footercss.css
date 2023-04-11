@@ -1,5 +1,3 @@
-/* footer */
-
 #footer {
     bottom: 0;
     position: relative;
@@ -9,12 +7,12 @@
     flex-direction: column;
     background: #2a2a2a;
     padding: 0 10%;
-    margin-top: 10%;
+    margin-top: 10%
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width: 960px) {
     #footer {
-        padding: 0 0;
+        padding:0
     }
 }
 
@@ -22,43 +20,43 @@
     width: 70%;
     padding: 40px;
     color: #fff;
-    display: flex;
+    display: flex
 }
 
 #footer .footer-link {
-    font-size: 0.9rem;
+    font-size: .9rem;
     padding: 0 0 0 30px;
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 200px
 }
 
 #footer .footer-linksmall {
-    font-size: 0.9rem;
+    font-size: .9rem;
     padding: 0 0 0 30px;
     display: flex;
     flex-direction: column;
-    width: 170px;
+    width: 170px
 }
 
 #footer .footer-link a {
     color: #fff;
     text-align: left;
-    text-decoration-line: none;
+    text-decoration-line: none
 }
 
 .linktitle:after {
-    background-color: #ffffff;
-    background: linear-gradient(90deg, #fff, #ffffff00);
+    background-color: #fff;
+    background: linear-gradient(90deg,#fff,#ffffff00);
     border-radius: 5px;
     content: "";
     display: block;
-    height: 5px;
+    height: 5px
 }
 
 #footer .footer-link li:last-child a::after {
     content: '';
-    padding: 0;
+    padding: 0
 }
 
 #borderfooter {
@@ -68,18 +66,18 @@
     justify-content: center;
     align-items: center;
     height: 0;
-    padding: 20px 55px;
+    padding: 20px 55px
 }
 
 .border {
     background-color: #ffffff21;
     height: 2.5px;
-    width: 100%;
+    width: 100%
 }
 
 #footer .footer-l {
     width: 30%;
-    color: #FFF;
+    color: #fff
 }
 
 #footer .footer-l .footer-contact {
@@ -87,27 +85,27 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 40vh;
+    height: 40vh
 }
 
 #footer .footer-l .footer-contact-area h2 {
     font-size: 1.2rem;
-    margin: 0 0 20px 0;
-    letter-spacing: 0.1em;
+    margin: 0 0 20px;
+    letter-spacing: .1em
 }
 
 #footer .footer-l .footer-contact-area a {
-    color: #FFF;
+    color: #fff;
     font-size: 1.3rem;
-    padding: 0 0 20px 0;
-    display: inline-block;
+    padding: 0 0 20px;
+    display: inline-block
 }
 
 #footer #copyright {
     color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 #footer #copyrightandsns {
@@ -115,7 +113,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px;
+    padding: 20px
 }
 
 .socialnetworkbutton {
@@ -123,24 +121,23 @@
     height: 30px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    /* padding: 0 0 0 15px; */
+    align-items: center
 }
 
 #youtubelogobutton {
     width: 50px;
-    transform: scale(0.05);
-    margin-left: 20px;
+    transform: scale(.05);
+    margin-left: 20px
 }
 
 #twitterlogobutton {
     width: 50px;
-    transform: scale(0.035);
-    margin-left: 20px;
+    transform: scale(.035);
+    margin-left: 20px
 }
 
 #footer #copyrightandsns small a {
-    color: #fff;
+    color: #fff
 }
 
 #footer #URL {
@@ -150,88 +147,84 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 200px;
-    padding: 20px;
+    padding: 20px
 }
 
 #footer #URL li {
     margin-left: 10px;
     margin-top: 10px;
-    color: #ffffff;
+    color: #fff;
     text-align: left;
-    text-decoration: none;
+    text-decoration: none
 }
 
-@media screen and (max-width:1045px) {
-
-    #footer .footer-r,
-    #footer .footer-l {
-        width: 100%;
+@media screen and (max-width: 1045px) {
+    #footer .footer-r,#footer .footer-l {
+        width:100%
     }
 
-    #footer .footer-l .footer-contact,
-    #footer #copyrightandsns {
-        height: 80px;
+    #footer .footer-l .footer-contact,#footer #copyrightandsns {
+        height: 80px
     }
 
     #footer .footer-r .map-area h2 {
-        width: 5%;
+        width: 5%
     }
 
     #footer .footer-link {
-        text-align: center;
+        text-align: center
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     #footer .footer-r {
-        padding: 80px 30px;
+        padding:80px 30px
     }
 
     #footer .footer-r .map-area {
-        margin: 0;
+        margin: 0
     }
 
     #footer .footer-link {
         display: flex;
         flex-flow: column;
         justify-content: space-between;
-        padding: 0 0 0 30px;
+        padding: 0 0 0 30px
     }
 
     #footer .footer-linksmall {
         display: flex;
         flex-flow: column;
         justify-content: space-between;
-        padding: 0 0 0 30px;
+        padding: 0 0 0 30px
     }
 
     #footer .footer-l .footer-contact {
-        display: none;
+        display: none
     }
 
     #footer .footer-r .map-area h2 {
         width: 100%;
         height: inherit;
-        margin: 0 0 50px 0;
+        margin: 0 0 50px;
         -ms-writing-mode: lr-tb;
         -webkit-writing-mode: horizontal-tb;
-        writing-mode: horizontal-tb;
+        writing-mode: horizontal-tb
     }
 
     #footer .footer-r .map-address {
-        width: 48%;
+        width: 48%
     }
 
     #footer #page-top {
         width: 60px;
-        height: 60px;
+        height: 60px
     }
 }
 
-@media screen and (max-width:950px) {
-
+@media screen and (max-width: 950px) {
     #footer #URL {
-        display: block;
-        height: 315px;
+        display:block;
+        height: 100%;
     }
 }
