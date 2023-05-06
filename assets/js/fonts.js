@@ -1,5 +1,5 @@
 window.WebFontConfig = {
-  google: { families: ['Roboto', 'Noto+Sans+JP', 'Material+Icons'] },
+  google: { families: ['Roboto', 'IBM+Plex+Sans+JP', 'M+PLUS+1p', 'Noto+Sans+JP', 'Material+Icons'] },
   typekit: { id: 'pbk7rhd' },
   active: function() {
     sessionStorage.fonts = true;
