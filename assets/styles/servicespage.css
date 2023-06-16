@@ -80,98 +80,11 @@ a:visited {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #fff;
+    background: #141414;
     top: 0;
     left: 0;
     z-index: 100;
     transition: .5s;
-}
-
-.loadingh1 {
-    color: #191919;
-    font-size: 500%;
-    background: linear-gradient(90deg, #008aff, #00abff, #01d4d7, #01f1a3);
-    background: -webkit-linear-gradient(0deg, #008aff, #00abff, #01d4d7, #01f1a3);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: .5s;
-    transform: translateY(10px);
-    opacity: 0;
-}
-
-.loadingh2 {
-    color: #191919;
-    font-size: 300%;
-    background: linear-gradient(90deg, #008aff, #00abff);
-    background: -webkit-linear-gradient(0deg, #008aff, #00abff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: .5s;
-    transform: translateY(10px);
-    opacity: 0;
-}
-
-.checkmark {
-    height: 100px;
-    width: 100px;
-    background: #00ff89;
-    border-radius: 50%;
-    position: relative;
-    opacity: 0;
-}
-
-.checkmark::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 65px;
-    width: 70px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    background: url(../../assets/images/CheckMark.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.checkmarkshow {
-    animation-name: checkmarkanim;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    opacity: 1;
-}
-
-@keyframes checkmarkanim {
-    0% {
-        opacity: 0;
-        transform: scale(.5);
-    }
-
-    50% {
-        transform: scale(1.25);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@media screen and (max-width:960px) {
-    .loadingh1 {
-        font-size: 225%;
-    }
-
-    .loadingh2 {
-        font-size: 175%;
-    }
-}
-
-.loadingtextshow {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .loadinghiding {
