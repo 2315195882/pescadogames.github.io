@@ -1,144 +1,153 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" id="html">
+
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | PescadoGames</title>
-    <meta name="description" content="PescadoGamesのサービス一覧ページです">
-    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>PescadoGames | Services</title>
     <meta property="og:title" content="PescadoGames | Services" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.pescadogames.com/services.html" />
-    <meta property="og:image" content="/assets/icons/PGBlueLogo-toumei.png" />
-    <meta property="og:image" content="/assets/icons/PGBlueLogo-toumei.png">
+    <meta property="og:image" content="https://www.pescadogames.com/assets/icons/PGBlueLogo-toumei.png" />
     <meta property="og:locale" content="ja_JP">
-    <link rel="stylesheet" type="text/css" href="assets/styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/parts.css">
-    <link rel="stylesheet" href="assets/styles/footercss.css">
-    <link rel="stylesheet" href="assets/styles/header.css">
-    <link rel="stylesheet" href="assets/styles/slidercss.css">
-    <link rel="stylesheet" href="assets/styles/indexcss.css">
-    <link rel="stylesheet" href="assets/styles/contactcss.css">
-    <link href="https://fonts.googleapis.com/css?family=Alex+Brush%7CNoto+Serif+JP&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMK183GM24" type="e99681242d084a2fbe090e20-text/javascript"></script>
-    <script type="e99681242d084a2fbe090e20-text/javascript">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300&family=Noto+Sans+JP:wght@300&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://www.pescadogames.com/assets/icons/PGBlueLogo-toumei.png">
+    <link rel="stylesheet" type="text/css" href="https://www.pescadogames.com/assets/styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/header_light.css">
+    <link rel="stylesheet" href="https://www.pescadogames.com/assets/styles/footercss.css">
+    <link rel="stylesheet" href="assets/styles/servicespage.css">
+    <script src="assets/js/allpage.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5RKHGWE5VK"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'G-TMK183GM24');
+        gtag('config', 'G-5RKHGWE5VK');
     </script>
 </head>
+
 <body>
-  <div class="contact contactdeactive">
-    <a href="contact.html" class="heading2">うまく表示されない場合はこちらのボタンから。</a>
-    <iframe src="iframecontact.html" height="80%" width="100%" frameborder="0">iFrameに対応していないブラウザを使用しています。<br>ブラウザを更新するか、ほかのブラウザを使用してください。</iframe>
-  </div>
-  <!--Header-->
-  <header class="header">
-      <div class="header__inner">
-          <h1 class="header__title header-title">
-              <a href=""><img src="https://www.pescadogames.com/assets/icons/PGBlueLogo-toumei.png"></a>
-          </h1>
+    <!--Header-->
+    <header class="header headershow" id="header">
+        <div class="header__inner">
+            <nav class="header__nav nav" id="js-nav">
+                <ul class="nav__items nav-items">
+                    <h1 class="header__title header-title">
+                        <a href="index.html" class="headeratag">
+                            <img src="https://www.pescadogames.com/assets/icons/PGBlueLogo-toumei.png">
+                        </a>
+                    </h1>
+                    <li class="nav-items__item"><a href="index">ホーム</a></li>
+                    <li class="nav-items__item"><a href="story">概要</a></li>
+                    <li class="nav-items__item"><a href="howtoplay">すべての製品</a></li>
+                    <li class="nav-items__item"><a href="spec">最新情報</a></li>
+                    <li class="nav-items__item"><a href="spec">お問い合わせ</a></li>
+                    <li class="nav-items__item">
+                        <button class="darkthemechangebutton" id="darkthemechangebutton">Change Theme</button>
+                    </li>
+                    </li>
+                </ul>
+            </nav>
 
-          <nav class="header__nav nav" id="js-nav">
-              <ul class="nav__items nav-items">
-                  <li class="nav-items__item"><a href="index.html">ホーム</a></li>
-                  <li class="nav-items__item"><a href="about.html">概要</a></li>
-                  <li class="nav-items__item"><a href="">製品・サービス</a></li>
-                  <li class="nav-items__item"><a href="news.html">お知らせ</a></li>
-              </ul>
-          </nav>
+            <button class="header__hamburger hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-          <button href="contact" class="header__title_tell" id="contact"><img src="https://www.pescadogames.com/assets/image/Tell.svg"><span style="font-size:10px">お問い合わせ</span></a>
-
-          <button class="header__hamburger hamburger" id="js-hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-          </button>
-
-      </div>
-  </header>
+        </div>
+    </header>
 
     <div id="container">
-
-      <h1 style="display: inline-block; background: linear-gradient(235deg, #00a8ff, #000000); background: -webkit-linear-gradient(235deg, #00a8ff, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">私たちの製品一覧です！</h1>
-
         <section class="wrapper">
-        <div class="container">
-        <div class="content">
-        <div class="content-item">
-        <img src="assets/icons/PGBOT.png" class="image" width="60%" height="60%">
-        </div>
-        <div class="content-item">
-        <div class="text">
-        <section class="fadein">
-        <h2>PGBOT&PGBOT(GBCOnly)</h2>
-        <p>あなたのDiscordサーバーを豊かにするために<br>開発されたBOT。<br>(注意:Discord専用です！)</p>
-        <a class="heading2" href="https://bot.pescadogames.ml">導入はこちら！(discord)</a>
-        </section>
-        </div>
-        </div>
-        </div>
-        </div>
+            <div class="content">
+                <div class="content-item">
+                    <div class="text">
+                        <section class="fadein">
+                            <h2>PescadoGamesBOT</h2>
+                            <p>あなたのDiscordサーバーを豊かにするために<br>開発されたBOT。<br>キャッチコピーは、「すべての便利がここに」</p>
+                            <a href="https://bot.pescadogames.com/" class="introductionbutton">公式サイトはこちら！</a>
+                        </section>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://www.pescadogames.com/assets/icons/PGBOT.png">
+                </div>
+            </div>
         </section>
 
         <section class="wrapper">
-        <div class="container">
-        <div class="content">
-        <div class="content-item">
-         <img src="assets/icons/PGLPG.png" class="image" width="60%" height="60%">
-        </div>
-        <div class="content-item">
-        <div class="text">
-        <section class="fadein">
-        <h2>PescadoGamesLauncher</h2>
-        <p>PescadoGames製品とその他の製品を使うために<br>作られたソフト<br>注意:Windows専用です！</p>
-        <a class="heading2" href="https://www.pescadogames.ml/app/PescadoGamesLauncher.html">ダウンロードはこちらから！</a>
-        </section>
-        </div>
-        </div>
-        </div>
-        </div>
+            <div class="content">
+                <div class="content-item">
+                    <div class="text">
+                        <section class="fadein">
+                            <h2>PuzzleLinker</h2>
+                            <p>扉の向こうには何があるのか？<br>黄色い板を踏むと次に進める謎の施設から脱出できるのか？！<br>緑のピンを動かして青いピンを手に入れよう！<br>でも注意して！赤い歯車触れちゃうと。。。</p>
+                            <a href="https://linker.pescadogames.com/" class="introductionbutton">公式サイトはこちら！</a>
+                        </section>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://www.pescadogames.com/assets/services/PuzzleLinkerLogo.png">
+                </div>
+            </div>
         </section>
 
         <section class="wrapper">
-        <div class="container">
-        <div class="content">
-        <div class="content-item">
-        <img src="assets/services/GENEI.png" class="image" width="60%" height="60%">
-        </div>
-        <div class="content-item">
-        <div class="text">
-        <section class="fadein">
-        <h2><ruby>幻影昔噺<rt>げんえいむかしばなし</rt></ruby></h2>
-        <p><ruby>旧時<rt>きゅうじ</rt></ruby>が<ruby>凩<rt>こがらし</rt></ruby>の<ruby>吹<rt>ふ</rt></ruby>く<ruby>前夜<rt>ぜんや</rt></ruby>が<ruby>今尚続<rt>いまなおつづ</rt></ruby>く...<br>注意:Windows専用です！</p>
+            <div class="content">
+                <div class="content-item">
+                    <div class="text">
+                        <section class="fadein">
+                            <h2><ruby>幻影昔噺<rt>げんえいむかしばなし</rt></ruby></h2>
+                            <p><ruby>旧時<rt>きゅうじ</rt></ruby>が<ruby>凩<rt>こがらし</rt></ruby>の<ruby>吹<rt>ふ</rt>
+                                </ruby>く<ruby>前夜<rt>ぜんや
+                                    </rt></ruby>が<ruby>今尚続<rt>いまなおつづ</rt></ruby>く...</p>
+                        </section>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://www.pescadogames.com/assets/services/GENEI.png">
+                </div>
+            </div>
         </section>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        
+
         <section class="wrapper">
-        <div class="container">
-        <div class="content">
-        <div class="content-item">
-        <img src="assets/services/kyogi.png" class="image" width="60%" height="60%">
-        </div>
-        <div class="content-item">
-        <div class="text">
-        <section class="fadein">
-        <h2><ruby>虚偽解決<rt>きょぎかいけつ</rt></ruby>パズル</h2>
-        <p>現在開発中のPescadoGames製の<br>Android向けパズルゲーム<br>注意:Android専用です</p>
+            <div class="content">
+                <div class="content-item">
+                    <div class="text">
+                        <section class="fadein">
+                            <h2><ruby>虚偽解決<rt>きょぎかいけつ</rt></ruby>パズル</h2>
+                            <p>現在開発中のPescadoGames製の<br>Android向けパズルゲーム</p>
+                        </section>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://www.pescadogames.com/assets/services/kyogi.png">
+                </div>
+            </div>
         </section>
-        </div>
-        </div>
-        </div>
-        </div>
+
+        <section class="wrapper">
+            <div class="content">
+                <div class="content-item">
+                    <div class="text">
+                        <section class="fadein">
+                            <h2>PescadoGamesLauncher&Store</h2>
+                            <p>PescadoGames製品とその他の製品を使うために<br>作られたソフト<br>(現在開発中のため、ダウンロードはできません。)</p>
+                            <a href="https://www.pescadogames.com/apps/PescadoGamesLauncher.html"
+                                class="introductionbutton">ダウンロードはこちらから！</a>
+                        </section>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://www.pescadogames.com/assets/icons/PescadoGamesStoreLogo.png">
+                </div>
+            </div>
         </section>
 
         <!--/container-->
@@ -146,31 +155,52 @@
     <!--コンテンツ本体終わり-->
 
     <div id="footer">
-            <footer id="copyright">
-                <small>&copy; PescadoGames All right reserved.</small>
-            </footer>
-            <footer id="URL">
-              <ul class="footer-link">
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="about.html">概要</a></li>
-                <li><a href=""><span>製品・サービス</span></a></li>
-                <li><a href="news.html">お知らせ</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-              </ul>
-              <ul class="footer-link">
-                <li><a href="https://twitter.com/PescadoGames">Twitter(PG)</a></li>
-                <li><a href="https://twitter.com/PescadoGamesBOT">Twitter(PGBOT)</a></li>
-                <li><a href="https://discord.gg/9HC3wWQSTV"><span>Discord(PG)</span></a></li>
-                <li><a href="https://discord.gg/Q6nzpQbQRa"><span>Discord(PGBOT)</span></a></li>
-              </ul>
-            </footer>
-        <div id="page-top"><a href="#"><span></span></a></div>
+
+        <footer id="copyrightandsns">
+            <div class="socialnetworkbutton">
+                <a href="https://twitter.com/PescadoGames" id="twitterlogobutton" target="_blank"
+                    rel="noopener noreferrer"><img
+                        src="https://support.pescadogames.com/assets/img/twitterlogowhite.png"></a>
+                <a href="https://www.youtube.com/@PescadoGames" id="youtubelogobutton" target="_blank"
+                    rel="noopener noreferrer"><img
+                        src="https://support.pescadogames.com/assets/img/yt_icon_mono_dark.png"></a>
+            </div>
+        </footer>
+
+        <footer id="URL">
+            <ul class="footer-link">
+                <li class="linktitle"><span>PescadoGames</span></li>
+                <li><a href="https://www.pescadogames.com/" target="_blank" rel="noopener noreferrer">ホーム</a></li>
+                <li><a href="https://www.pescadogames.com/about" target="_blank" rel="noopener noreferrer">概要</a></li>
+                <li><a href="https://www.pescadogames.com/services" target="_blank"
+                        rel="noopener noreferrer"><span>製品・サービス</span></a></li>
+                <li><a href="https://www.pescadogames.com/news" target="_blank" rel="noopener noreferrer">お知らせ</a></li>
+            </ul>
+
+            <ul class="footer-link">
+                <li class="linktitle"><span>SNS/Contact</span></li>
+                <li><a href="https://discord.gg/9HC3wWQSTV" target="_blank"
+                        rel="noopener noreferrer"><span>Discord</span></a>
+                </li>
+                <li><a href="https://www.pescadogames.com/contact" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+                </li>
+            </ul>
+        </footer>
+
+        <footer id="borderfooter">
+            <div class="border"></div>
+        </footer>
+
+        <footer id="copyright">
+            <span>&copy;PescadoGames All rights reserved.</span>
+        </footer>
     </div>
 
     <!--▽▽jQuery▽▽-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="assets/js/indexjs.js"></script>
-        <script>
+    <script>
         const ham = $('#js-hamburger');
         const nav = $('#js-nav');
         ham.on('click', function () { //ハンバーガーメニューをクリックしたら
@@ -180,30 +210,32 @@
         });
     </script>
     <script>
-        $(function(){
-    	$(window).scroll(function (){
-    		$('.fadein').each(function(){
-    			var elemPos = $(this).offset().top;
-    			var scroll = $(window).scrollTop();
-    			var windowHeight = $(window).height();
-    			if (scroll > elemPos - windowHeight + 200){
-    				$(this).addClass('scrollin');
-    			}
-    		});
-    	});
-    });
-  </script>
-  <script>
-  $('#contact').on('click', function() {
-    if ($('.contact').hasClass('contactdeactive')) {
-      $('.contact').removeClass("contactdeactive");
-    } else {
-      $('.contact').addClass("contactdeactive");
-    }
-  });
-  </script>
+        $(function () {
+            $(window).scroll(function () {
+                $('.fadein').each(function () {
+                    var elemPos = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > elemPos - windowHeight + 200) {
+                        $(this).addClass('scrollin');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $('#contact').on('click', function () {
+            if ($('.contact').hasClass('contactdeactive')) {
+                $('.contact').removeClass("contactdeactive");
+            } else {
+                $('.contact').addClass("contactdeactive");
+            }
+        });
+    </script>
     <!--△△jQuery△△-->
-    <script data-cfasync="false" src="https://www.pescadogames.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script data-cfasync="false"
+        src="https://www.pescadogames.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 
 </body>
+
 </html>
