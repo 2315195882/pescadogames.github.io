@@ -68,7 +68,8 @@
         background-color: inherit;
         height: inherit;
         display: flex;
-        justify-content: end
+        justify-content: end;
+        width: 100%;
     }
 }
 
@@ -102,6 +103,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 75%;
     padding: 0
 }
 
@@ -124,7 +126,8 @@
         position: inherit;
         top: 0;
         left: 0;
-        transform: translate(0, 0)
+        transform: translate(0, 0);
+        width: 100%;
     }
 
     .nav-items__item a {
@@ -146,10 +149,32 @@
     }
 }
 
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+@media screen and (max-width:960px) {
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+}
+
+.header__title.sp {
+    padding-left: 5px
+}
+
 .header__hamburger {
     width: 48px;
     height: 50px;
-    padding-right: 10px
+    padding-right: 10px;
 }
 
 .hamburger {
