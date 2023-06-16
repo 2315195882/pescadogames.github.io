@@ -5,6 +5,7 @@ window.onload = function () {
         setTimeout(function () {
 
             document.getElementById('loading').classList.add('loadinghide');
+            document.getElementById('analyticsinfo').classList.add('show')
 
         }, 100);
     }, 1000);
@@ -38,3 +39,7 @@ $(window).scroll(function () {
 $(window).on('load', function () {
     fadeAnime();/* アニメーション用の関数を呼ぶ*/
 });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+
+function CloseAnalyticsDialog() {
+    document.getElementById('analyticsinfo').classList.remove('show')
+}
