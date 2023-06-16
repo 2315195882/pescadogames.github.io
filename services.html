@@ -34,6 +34,17 @@
 <body>
     <div id="loading" class="loading"></div>
 
+    <div class="analyticsinfo" id="analyticsinfo">
+		<div class="yokoflex">
+			<div class="tateflex">
+				<h2>PescadoGamesのサイトには、Google Analyticsを使用しています。</h2>
+				<p>PescadoGamesのすべてのサイトには、ユーザーがサイトをどのくらい閲覧したかなどを統計するために、Google Analyticsを使用しています。</p>
+				<a href="https://www.pescadogames.com/info/whyanalyticsinfo.html">なぜこの表示を出すのですか？</a>
+			</div>
+			<button onclick="CloseAnalyticsDialog()">閉じる</button>
+		</div>
+	</div>
+
     <!--Header-->
     <header class="header headershow" id="header">
         <div class="header__inner">
@@ -230,15 +241,6 @@
                     }
                 });
             });
-        });
-    </script>
-    <script>
-        $('#contact').on('click', function () {
-            if ($('.contact').hasClass('contactdeactive')) {
-                $('.contact').removeClass("contactdeactive");
-            } else {
-                $('.contact').addClass("contactdeactive");
-            }
         });
     </script>
     <!--△△jQuery△△-->
