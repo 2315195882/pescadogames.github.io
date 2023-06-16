@@ -249,6 +249,30 @@ a:visited {
 }
 
 @media screen and (max-width:960px) {
+    .analyticsinfo {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .yokoflex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tateflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .analyticsinfo a {
+        color: #00abff;
+    }
+
+    .analyticsinfo button {
+        width: 100%;
+    }
+
     .wrapper {
         width: 100%;
         height: 50%;

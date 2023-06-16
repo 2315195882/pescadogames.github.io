@@ -232,7 +232,6 @@
     top: 0;
 }
 
-
 body.darktheme .header {
     background: #191919;
 }
@@ -241,20 +240,8 @@ body.darktheme .header__nav {
     background-color: #191919;
 }
 
-@media screen and (max-width:1366px) {
-    body.darktheme .header__nav {
-        background-color: #2a2a2a;
-    }
-}
-
 body.darktheme .nav-items__item a {
     color: #fff;
-}
-
-@media screen and (min-width:960px) {
-    body.darktheme .nav-items__item a {
-        color: #fff
-    }
 }
 
 body.darktheme .hamburger {
