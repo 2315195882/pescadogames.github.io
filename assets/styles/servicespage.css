@@ -67,11 +67,11 @@ a:visited {
     top: 0;
     left: 0;
     z-index: 100;
-    transition: .5s;
 }
 
 .loadinghiding {
     opacity: 0;
+    transition: .5s;
 }
 
 .loadinghide {
@@ -317,39 +317,6 @@ body.darktheme::-webkit-scrollbar-thumb:active {
 
 body.darktheme .loading {
     background-color: #141414;
-}
-
-body.darktheme .header {
-    background: #2a2a2a;
-}
-
-body.darktheme .header__nav {
-    background-color: #2a2a2a;
-}
-
-@media screen and (max-width:1366px) {
-    body.darktheme .header__nav {
-        background-color: #2a2a2a;
-    }
-}
-
-body.darktheme .nav-items__item a {
-    color: #fff;
-}
-
-@media screen and (min-width:960px) {
-    body.darktheme .nav-items__item a {
-        color: #fff
-    }
-}
-
-body.darktheme .hamburger {
-    background-color: transparent;
-    border-color: transparent;
-}
-
-body.darktheme .hamburger span {
-    background-color: #fff;
 }
 
 body.darktheme .wrapper {
