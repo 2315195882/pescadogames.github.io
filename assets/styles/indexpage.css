@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+body {
+    padding-top: 0;
+}
+
+.slider_parent {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.slider_child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+@keyframes zoomout {
+    0% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.zoomout-animation {
+    animation: zoomout 10s linear 0s normal both;
+}
+
+.slidertitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    opacity: 0;
+    font-size: 450%;
+    text-shadow: 0 0 20px black;
+    color: #FFF;
+    transition: .25s;
+}
+
+.slidertitle.show {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 25vh;
+    margin-right: auto;
+    margin-left: auto;
+    transition: .25s;
+}
+
+.wrapper .content img {
+    position: absolute;
+    left: 0;
+    object-fit: contain;
+    height: 100%;
+    transition: .25s;
+    z-index: -1;
+}
+
+.wrapper .content {
+    background: linear-gradient(90deg, #ffffff7a 0%, #ffffff 25%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    overflow: hidden;
+    transition: .25s;
+}
+
+.wrapper h2 {
+    font-size: 450%;
+    font-family: 'Noto Sans JP';
+    width: 70%;
+    text-shadow: 0 0 20px white;
+}
+
+.wrapper p {
+    font-size: x-large;
+    font-family: 'Noto Sans JP';
+    width: 50%;
+}
+
+.PescadoGamesAllServices_parent {
+    width: 100%;
+    height: 50%;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+.PescadoGamesAllServices_child {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceinfo {
+    width: 485px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+    margin-top: 50px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 10px #0000007a;
+}
+
+.serviceinfo:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.serviceinfo img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+
+.slidertitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    opacity: 0;
+    font-size: 450%;
+    text-shadow: 0 0 20px black;
+    color: #FFF;
+    transition: .25s;
+}
+
+/*DarkTheme*/
+
+body.darktheme .wrapper .content {
+    background: linear-gradient(90deg, #fff0 0%, #141414 25%);
+    border-radius: 0px;
+    box-shadow: 0 0 0 #0000007a;
+}
+
+body.darktheme .serviceinfo {
+    background: #1a1a1a;
+    color: #FFF;
+}
+
+body.darktheme .serviceinfo:visited {
+    color: #FFF
+}
+
+body.darktheme .wrapper h2 {
+    text-shadow: 0 0 0px white;
+}
+
+@media screen and (max-width:960px) {
+    .analyticsinfo {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .yokoflex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tateflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .analyticsinfo a {
+        color: #00abff;
+    }
+
+    .analyticsinfo button {
+        width: 100%;
+    }
+
+    .slidertitle {
+        font-size: 200%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .slick-slide img {
+        display: block;
+        width: auto;
+        height: 100vh;
+        transform: translateX(-15%);
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 50%;
+        margin: 100px 0;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 25px;
+        box-shadow: 0 2px 10px #0000007a;
+        overflow: hidden;
+        transition: .25s;
+    }
+
+    .wrapper .content img {
+        height: 50%;
+        width: 100%;
+        object-position: top;
+    }
+
+    .wrapper h2 {
+        font-size: 200%;
+        word-break: break-word;
+        font-family: 'Noto Sans JP';
+        text-align: center;
+        margin-top: 2.5%;
+    }
+
+    .wrapper p {
+        font-size: 150%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: 'Noto Sans JP';
+        width: 100%;
+        padding: 2.5%;
+        word-wrap: break-word;
+    }
+
+    .wrapper .content {
+        background: linear-gradient(180deg, #fff0 0%, #ffffff 25%);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .PescadoGamesAllServices_parent {
+        width: 100%;
+        height: 50%;
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .PescadoGamesAllServices_child {
+        width: auto;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        margin-top: 25px;
+        padding: 0 25px;
+    }
+
+    .serviceinfo {
+        width: 100vw;
+        height: 200px;
+        margin: 25px;
+        padding: 20px;
+        box-shadow: 0 2px 10px #0000007a;
+    }
+}
