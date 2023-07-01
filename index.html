@@ -1,20 +1,308 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<title>PescadoGames | Home</title>
-<meta name="keywords"  content="">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<!--=============Google Font ===============-->
-<link href="https://fonts.googleapis.com/css?family=Alex+Brush%7CNoto+Serif+JP&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/assets/styles/reset.css">
+<html lang="ja" id="html">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>PescadoGames | Home</title>
+    <meta property="og:title" content="PescadoGames | Home" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.pescadogames.com/index.html" />
+    <meta property="og:image" content="https://www.pescadogames.com/assets/icons/PGBlueLogo-toumei.png" />
+    <meta property="og:locale" content="ja_JP">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300&family=Noto+Sans+JP:wght@300&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://www.pescadogames.com/assets/icons/PGBlueLogo-toumei.png">
+    <link rel="stylesheet" href="https://www.pescadogames.com/assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="https://www.pescadogames.com/assets/styles/footercss.css">
+    <link rel="stylesheet" href="assets/styles/allpage.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link rel="stylesheet" href="assets/styles/indexpage.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5RKHGWE5VK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5RKHGWE5VK');
+    </script>
+    <script src="assets/js/allpage.js"></script>
 </head>
+
 <body>
-	<h1>サイト建設中...</h1>
-	<a href="https://store.pescadogames.com">PescadoGamesLauncher(Store)</a>
-	<a href="https://support.pescadogames.com">Support</a>
-	<a href="https://twitter.com/PescadoGames">Twitter</a>
-	<a href="https://www.youtube.com/@PescadoGames">YouTube</a>
-	<a href="https://discord.gg/MaGjYrbtd2">Discord</a>
+    <div id="loading" class="loading"></div>
+
+    <div class="analyticsinfo" id="analyticsinfo">
+        <div class="yokoflex">
+            <div class="tateflex">
+                <h2>PescadoGamesのサイトには、Google Analyticsを使用しています。</h2>
+                <p>PescadoGamesのすべてのサイトには、ユーザーがサイトをどのくらい閲覧したかなどを統計するために、Google Analyticsを使用しています。</p>
+                <a href="https://www.pescadogames.com/info/whyanalyticsinfo.html">なぜこの表示を出すのですか？</a>
+            </div>
+            <button onclick="CloseAnalyticsDialog()">閉じる</button>
+        </div>
+    </div>
+
+    <!--Header-->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <h1 class="header__title header-title sp">
+                <a href="index.html" class="headeratag">
+                    <img src="https://www.pescadogames.com/assets/icons/PGBlueLogo-toumei.png">
+                </a>
+            </h1>
+            <nav class="header__nav nav" id="js-nav">
+                <ul class="nav__items nav-items">
+                    <h1 class="header__title header-title pc">
+                        <a href="index.html" class="headeratag">
+                            <img src="https://www.pescadogames.com/assets/icons/PGBlueLogo-toumei.png">
+                        </a>
+                    </h1>
+                    <li class="nav-items__item"><a href="index">ホーム</a></li>
+                    <li class="nav-items__item"><a href="about">概要</a></li>
+                    <li class="nav-items__item"><a href="services">すべての製品</a></li>
+                    <li class="nav-items__item"><a href="news">最新情報</a></li>
+                    <li class="nav-items__item"><a href="contact">お問い合わせ</a></li>
+                    <li class="nav-items__item">
+                        <button class="darkthemechangebutton" id="darkthemechangebutton">Change Theme</button>
+                    </li>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="header__hamburger hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+    <div class="slider_parent">
+        <div class="slider_child">
+            <div><img src="https://www.pescadogames.com/assets/services/PuzzleLinkerLogo.png" alt="PuzzleLinkerLogo">
+            </div>
+            <div><img src="https://www.pescadogames.com/assets/services/GENEI.png" alt="幻影昔噺ロゴ"></div>
+            <div><img src="https://www.pescadogames.com/assets/services/kyogi.png" alt="虚偽解決パズルロゴ"></div>
+        </div>
+        <h1 class="slidertitle" id="slidertitle">世界を、楽しく、面白く。</h1>
+    </div>
+
+    <div id="container">
+        <section class="wrapper">
+            <div class="content">
+                <img src="https://www.pescadogames.com/assets/icons/PGBlueLogo-toumei.png">
+                <h2>ある日、Discordから生まれた</h2>
+                <p>2019年12月26日の4時10分19秒(UTCでは2019年12月26日の19時10分19秒)にDiscordにできた一つのサーバーが、<ruby>今日<rt>こんにち</rt>
+                    </ruby>のPescadoGamesを形作った</p>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <div class="content">
+                <img src="https://www.pescadogames.com/assets/services/GENEI.png">
+                <h2>最初は<br>PescadoGamesではなかった</h2>
+                <p>元々は創設者の2315195882(現さんかくじょーぎ)が作っていた
+                    <br>楽しいゲームというゲームを作るためのサーバーだった
+                    <br>しかし、規模が大きくなり、
+                    <br>楽しいゲームというゲームの開発をやめ、
+                    <br>いくつもの名称変更や、運営、メンバーの増加を経て、
+                    <br>今のPescadoGamesが形成された
+                </p>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <div class="content">
+                <img src="https://www.pescadogames.com/assets/services/PuzzleLinkerLogo.png">
+                <h2>幻影昔噺<br>DegText(DisbaroAHead)<br>PuzzleLinker</h2>
+                <p>幻影昔噺は、
+                    <br>PescadoGamesという名前になったときに開発がスタートした
+                    <br>DisbaroAHeadは、幻影昔噺とほぼ同じ時期に開発が始まった
+                    <br>その後、DisbaroAHeadは、DegTextに名称が変わった
+                    <br>PuzzleLinkerは、DisbaroAHeadとは別で、
+                    <br>新しいゲームを作りたいという理由で作られた
+                    <br>幻影昔噺はUnity®を
+                    <br>DegTextとPuzzleLinkerはUnreal Engine®を
+                </p>
+            </div>
+        </section>
+
+        <div class="PescadoGamesAllServices_parent">
+            <h2>PescadoGamesの代表的な製品・サービス</h2>
+            <div class="PescadoGamesAllServices_child">
+                <a class="serviceinfo" href="https://bot.pescadogames.com">
+                    <img src="https://www.pescadogames.com/assets/icons/PGBOT.png" alt="PescadoGamesBOT">
+                    <p>PescadoGamesBOT</p>
+                </a>
+                <a class="serviceinfo" href="https://linker.pescadogames.com">
+                    <img src="https://www.pescadogames.com/assets/services/PuzzleLinkerLogo.png" alt="PuzzleLinker">
+                    <p>PuzzleLinker</p>
+                </a>
+                <a class="serviceinfo" href="https://store.pescadogames.com">
+                    <img src="https://www.pescadogames.com/assets/icons/PescadoGamesStoreLogo.png"
+                        alt="PescadoGamesStoreLogo">
+                    <p>Store&Launcher</p>
+                </a>
+            </div>
+        </div>
+
+        <!--/container-->
+    </div>
+    <!--コンテンツ本体終わり-->
+
+    <div id="footer">
+
+        <footer id="copyrightandsns">
+            <div class="socialnetworkbutton">
+                <a href="https://twitter.com/PescadoGames" id="twitterlogobutton" target="_blank"
+                    rel="noopener noreferrer"><img
+                        src="https://support.pescadogames.com/assets/img/twitterlogowhite.png"></a>
+                <a href="https://www.youtube.com/@PescadoGames" id="youtubelogobutton" target="_blank"
+                    rel="noopener noreferrer"><img
+                        src="https://support.pescadogames.com/assets/img/yt_icon_mono_dark.png"></a>
+            </div>
+        </footer>
+
+        <footer id="URL">
+            <ul class="footer-link">
+                <li class="linktitle"><span>PescadoGames</span></li>
+                <li><a href="https://www.pescadogames.com/" target="_blank" rel="noopener noreferrer">ホーム</a></li>
+                <li><a href="https://www.pescadogames.com/about" target="_blank" rel="noopener noreferrer">概要</a></li>
+                <li><a href="https://www.pescadogames.com/services" target="_blank"
+                        rel="noopener noreferrer"><span>製品・サービス</span></a></li>
+                <li><a href="https://www.pescadogames.com/news" target="_blank" rel="noopener noreferrer">お知らせ</a></li>
+            </ul>
+
+            <ul class="footer-link">
+                <li class="linktitle"><span>SNS/Contact</span></li>
+                <li><a href="https://discord.gg/9HC3wWQSTV" target="_blank"
+                        rel="noopener noreferrer"><span>Discord</span></a>
+                </li>
+                <li><a href="https://www.pescadogames.com/contact" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+                </li>
+            </ul>
+
+            <ul class="footer-link">
+                <li class="linktitle"><span>サイト関係</span></li>
+                
+                <li><a href="https://www.pescadogames.com/info/license.html" target="_blank"
+                        rel="noopener noreferrer">ライセンス</a></li>
+
+                <li><a href="https://www.pescadogames.com/legal/sitelegal.html" target="_blank"
+                        rel="noopener noreferrer">サイト利用規約</a></li>
+
+                <li><a href="https://www.pescadogames.com/services" target="_blank"
+                        rel="noopener noreferrer"><span>プライバシーポリシー</span></a></li>
+            </ul>
+        </footer>
+
+        <footer id="borderfooter">
+            <div class="border"></div>
+        </footer>
+
+        <footer id="copyright">
+            <span>&copy;PescadoGames All rights reserved.</span>
+        </footer>
+    </div>
+
+    <!--▽▽jQuery▽▽-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/indexjs.js"></script>
+    <script src="assets/js/indexfadeanimation.js"></script>
+    <script src="assets/slick/slick.min.js"></script>
+    <script>
+        const ham = $('#js-hamburger');
+        const nav = $('#js-nav');
+        ham.on('click', function () { //ハンバーガーメニューをクリックしたら
+            ham.toggleClass('active'); // ハンバーガーメニューにactiveクラスを付け外し
+            nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外し
+
+        });
+
+        window.addEventListener("scroll", function () {
+            const header = document.getElementById("header");
+            const scroll = window.pageYOffset;
+            if (scroll > 10) {
+                header.classList.add('headershow');
+            } else {
+                header.classList.remove('headershow');
+            }
+        });
+    </script>
+    <script>
+        $(function () {
+            $('.slider_child')
+                .on("init", function () {
+                    $('.slick-slide[data-slick-index="0"]').addClass("zoomout-animation");
+                })
+                .slick({
+                    accessibility: false,
+                    dots: false,
+                    arrows: false,
+                    infinite: true,
+                    speed: 2000,
+                    fade: true,
+                    cssEase: 'linear',
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                    swipe: false
+                })
+                .on({
+                    // スライドが移動する前に発生するイベント
+                    beforeChange: function (event, slick, currentSlide, nextSlide) {
+                        $(".slick-slide", this).eq(nextSlide).addClass("zoomout-animation");
+                        $(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+                    },
+                    // スライドが移動した後に発生するイベント
+                    afterChange: function () {
+                        // 表示していないスライドはアニメーションのclassを外す
+                        $(".remove-animation", this).removeClass(
+                            "remove-animation zoomout-animation"
+                        );
+                    },
+                });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                $('.fadein').each(function () {
+                    var elemPos = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > elemPos - windowHeight + 200) {
+                        $(this).addClass('scrollin');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.getElementById('loading').classList.add('loadinghiding');
+
+                setTimeout(function () {
+
+                    document.getElementById('loading').classList.add('loadinghide');
+                    document.getElementById('analyticsinfo').classList.add('show');
+                    document.getElementById('slidertitle').classList.add('show');
+
+                }, 100);
+            }, 1000);
+        };
+    </script>
+    <!--△△jQuery△△-->
+
 </body>
+
 </html>
