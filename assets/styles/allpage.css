@@ -1,58 +1,58 @@
 @charset "utf-8";
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 body {
     background-color: #f4f4f4;
-    font-family: 'IBM Plex Sans JP';
+    font-family: ibm plex sans jp;
     color: #3a3a3a;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 50px
 }
 
 .noscroll {
-    overflow: hidden;
+    overflow: hidden
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-    height: 5px;
+    width: 0;
+    height: 5px
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #cccccc;
+    background-color: #ccc
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #9d9d9d;
-    border-radius: 5px;
+    border-radius: 5px
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #b7b7b7;
+    background-color: #b7b7b7
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-color: #525252;
+    background-color: #525252
 }
 
 li {
-    list-style-type: none;
+    list-style-type: none
 }
 
 a {
     color: #2a2a2a;
-    text-decoration: none;
+    text-decoration: none
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 a:visited {
-    color: #2a2a2a;
+    color: #2a2a2a
 }
 
 .loading {
@@ -67,15 +67,15 @@ a:visited {
     top: 0;
     left: 0;
     z-index: 100;
-    transition: .5s;
+    transition: .5s
 }
 
 .loadinghiding {
-    opacity: 0;
+    opacity: 0
 }
 
 .loadinghide {
-    display: none;
+    display: none
 }
 
 .analyticsinfo {
@@ -84,58 +84,58 @@ a:visited {
     width: max-content;
     left: 50%;
     transform: translate(-50%, 10px);
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 0 0 10px #0000002a;
     border-radius: 10px;
     padding: 10px 20px;
     opacity: 0;
     transition: .5s;
-    z-index: -1;
+    z-index: -1
 }
 
 .analyticsinfo.show {
     transform: translate(-50%, 0px);
     opacity: 1;
-    z-index: 10;
+    z-index: 10
 }
 
 .yokoflex {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center
 }
 
 .tateflex {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .analyticsinfo a {
-    color: #00abff;
+    color: #00abff
 }
 
 .analyticsinfo button {
     background: #008aff;
     height: 40px;
     width: 200px;
-    color: #ffffff;
+    color: #fff;
     border-radius: 5px;
     transition: .25s;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 10px
 }
 
 .analyticsinfo button:hover {
-    background-color: #21adff;
+    background-color: #21adff
 }
 
 .analyticsinfo button:active {
-    background: #0062b4;
+    background: #0062b4
 }
 
 .analyticsinfo button:disabled {
     background: #0062b4;
-    cursor: default;
+    cursor: default
 }
 
 .introductionbutton {
@@ -144,7 +144,6 @@ a:visited {
     width: 100%;
     color: #fff;
     font-size: 135%;
-    box-shadow: 0px 2px 5px #0000002a;
     border-radius: 10px;
     transition: .25s;
     display: flex;
@@ -152,57 +151,57 @@ a:visited {
     justify-content: center;
     margin-top: 10px;
     padding: 25px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .introductionbutton:visited {
-    color: #fff;
+    color: #2a2a2a;
 }
 
 .introductionbutton:hover {
-    background-color: #21adff;
+    background-color: #21adff
 }
 
 .introductionbutton:active {
     background-color: #0062b4;
-    box-shadow: 0 0 0 #0000002a;
+    box-shadow: 0 0 0 #0000002a
 }
 
 .introductionbutton:disabled {
     background-color: #747474;
     box-shadow: 0 0 0 #0000002a;
-    cursor: default;
+    cursor: default
 }
 
 .show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0)
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width: 960px) {
     .analyticsinfo {
         bottom: 0;
         width: 100%;
-        border-radius: 0px;
+        border-radius: 0
     }
 
     .yokoflex {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center
     }
 
     .tateflex {
         display: flex;
-        flex-direction: column;
+        flex-direction: column
     }
 
     .analyticsinfo a {
-        color: #00abff;
+        color: #00abff
     }
 
     .analyticsinfo button {
-        width: 100%;
+        width: 100%
     }
 }
 
@@ -217,83 +216,83 @@ a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .darkthemechangebutton:hover {
-    background: #4a4a4a;
+    background: #4a4a4a
 }
 
 .darkthemechangebutton:active {
     background: #191919;
-    box-shadow: 0px 0px 0 0 #0000008c;
+    box-shadow: 0 0 0 0 #0000008c
 }
 
 body.darktheme .darkthemechangebutton {
     background: #dcdcdc;
     height: 40px;
     width: 150px;
-    color: #000000;
+    color: #000;
     border-radius: 5px;
     transition: .25s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: pointer
 }
 
 @media screen and (max-width: 1366px) {
     .darkthemechangebutton {
-        width: 100%;
+        width: 100%
     }
 
     body.darktheme .darkthemechangebutton {
-        width: 100%;
+        width: 100%
     }
 }
 
 body.darktheme .darkthemechangebutton:hover {
-    background: #ffffff;
-    text-decoration: underline;
+    background: #fff;
+    text-decoration: underline
 }
 
 body.darktheme .darkthemechangebutton:active {
-    background: #bbbbbb;
-    box-shadow: 0px 0px 0 0 #0000008c;
+    background: #bbb;
+    box-shadow: 0 0 0 0 #0000008c
 }
 
 body.darktheme {
     background-color: #141414;
-    color: #fff;
+    color: #fff
 }
 
 body.darktheme ::-webkit-scrollbar {
-    width: 10px;
+    width: 10px
 }
 
 body.darktheme::-webkit-scrollbar-track {
-    background-color: #141414;
+    background-color: #141414
 }
 
 body.darktheme::-webkit-scrollbar-thumb {
     background-color: #9d9d9d;
-    border-radius: 5px;
+    border-radius: 5px
 }
 
 body.darktheme::-webkit-scrollbar-thumb:hover {
-    background-color: #b7b7b7;
+    background-color: #b7b7b7
 }
 
 body.darktheme::-webkit-scrollbar-thumb:active {
-    background-color: #525252;
+    background-color: #525252
 }
 
 body.darktheme .loading {
-    background-color: #141414;
+    background-color: #141414
 }
 
 body.darktheme .analyticsinfo {
     background-color: #1a1a1a;
-    box-shadow: 0 0 10px #0000007a;
+    box-shadow: 0 0 10px #0000007a
 }

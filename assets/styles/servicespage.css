@@ -101,7 +101,7 @@ a:visited {
     margin-left: auto;
     background: #fff;
     border-radius: 25px;
-    box-shadow: 0 2px 10px #0000007a;
+    box-shadow: 0 0 10px #0000002a;
     transition: .25s
 }
 
@@ -158,12 +158,12 @@ a:visited {
 }
 
 .introductionbutton {
-    background-color: #008aff;
+    background-color: #FFF;
+    border: 2px solid #008aff;
     height: 40px;
     width: 100%;
-    color: #fff;
+    color: #2a2a2a;
     font-size: 135%;
-    /* box-shadow:0 2px 5px #0000005e; */
     border-radius: 10px;
     transition: .25s;
     display: flex;
@@ -175,15 +175,18 @@ a:visited {
 }
 
 .introductionbutton:visited {
-    color: #fff
+    color: #2a2a2a;
 }
 
 .introductionbutton:hover {
-    background-color: #21adff
+    background-color: #21adff;
+    border: 2px solid #21adff;
+    color: #FFF;
 }
 
 .introductionbutton:active {
     background-color: #0062b4;
+    border: 2px solid #0062b4;
     box-shadow: 0 0 0 #0000005e
 }
 
@@ -250,7 +253,6 @@ a:visited {
         width: 100%;
         border-radius: 20px;
         background: #fff;
-        /* box-shadow:0 2px 10px #0000007a; */
         transition: .25s
     }
 
