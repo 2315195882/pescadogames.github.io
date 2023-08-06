@@ -78,21 +78,6 @@ a:visited {
     display: none
 }
 
-.analyticsinfo {
-    position: fixed;
-    bottom: 0;
-    width: max-content;
-    left: 50%;
-    transform: translate(-50%, 10px);
-    background-color: #fff;
-    box-shadow: 0 0 10px #0000007a;
-    border-radius: 10px;
-    padding: 10px 20px;
-    opacity: 0;
-    transition: .5s;
-    z-index: -1
-}
-
 .wrapper {
     width: 80%;
     height: 50%;
